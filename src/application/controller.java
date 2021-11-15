@@ -1,5 +1,6 @@
 package application;
 
-public class controller {
+public class Controller {
+	
 
 }
