@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="application.homepagecontroller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="543.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homepagecontroller">
    <children>
-      <AnchorPane layoutX="-145.0" layoutY="-138.0" prefHeight="630.0" prefWidth="809.0">
+      <AnchorPane layoutY="-47.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="574.0" prefWidth="819.0">
          <children>
-            <Button layoutX="391.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchto_homepage" text="Button" />
+            <ImageView fitHeight="542.0" fitWidth="819.0" layoutX="41.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Downloads/shop.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="373.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchto_homepage" prefHeight="58.0" prefWidth="120.0" text="Game Page" textAlignment="CENTER" textFill="#d62929">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect></Button>
          </children>
       </AnchorPane>
    </children>
