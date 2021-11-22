@@ -68,7 +68,7 @@
                <font>
                   <Font size="18.0" />
                </font></Button>
-            <Button fx:id="button3" mnemonicParsing="false" prefHeight="59.0" prefWidth="174.0" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-width: 5; -fx-border-color: lightgreen;" text="EXIT">
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exit" prefHeight="59.0" prefWidth="174.0" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-width: 5; -fx-border-color: lightgreen;" text="EXIT">
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
                      <stops>
