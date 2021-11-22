@@ -13,7 +13,7 @@
          <children>
             <ImageView fitHeight="542.0" fitWidth="819.0" layoutX="41.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../Downloads/shop.jpg" />
+                  <Image url="@../media/shop.jpg" />
                </image>
             </ImageView>
             <Button layoutX="373.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchto_homepage" prefHeight="58.0" prefWidth="120.0" text="Game Page" textAlignment="CENTER" textFill="#d62929">
