@@ -19,7 +19,12 @@
                   <Image url="@../../../../Downloads/userAuthenticationPage.png" />
                </image>
             </ImageView>
-            <Button fx:id="button4" layoutX="551.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchto_homepage" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-color: lightgreen; -fx-border-width: 5; -fx-pref-height: 59; -fx-pref-width: 174;" text="HOME">
+            <ImageView fitHeight="185.0" fitWidth="296.0" layoutX="225.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/userName.jpeg" />
+               </image>
+            </ImageView>
+            <Button fx:id="button4" layoutX="529.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchto_homepage" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-color: lightgreen; -fx-border-width: 5; -fx-pref-height: 59; -fx-pref-width: 174;" text="HOME">
                <font>
                   <Font size="18.0" />
                </font>
@@ -39,10 +44,7 @@
                      </stops>
                   </LinearGradient>
                </textFill></Button>
-            <TextField fx:id="nameText" layoutX="288.0" layoutY="235.0" prefHeight="42.0" prefWidth="224.0" promptText="Enter your name" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-width: 5; -fx-border-color: lightgreen; -fx-pref-height: 59; -fx-pref-width: 174;">
-               <font>
-                  <Font size="18.0" />
-               </font></TextField>
+            <TextField layoutX="259.0" layoutY="222.0" prefHeight="36.0" prefWidth="226.0" promptText="Enter your name" />
          </children>
       </AnchorPane>
    </children>
