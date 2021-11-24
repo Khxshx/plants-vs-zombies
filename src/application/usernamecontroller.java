@@ -12,7 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-public class homepagecontroller {
+public class usernamecontroller {
 	@FXML
 	private Stage stage;
 	private Scene scene;
@@ -22,31 +22,18 @@ public class homepagecontroller {
 	@FXML
 	private AnchorPane home;
 	@FXML
-	public void switchto_shop(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("/shop.fxml"));
+	public void switchto_homepage(ActionEvent event) throws IOException{
+		Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
 	}
-	@FXML
-	public void switchto_username(ActionEvent event) throws IOException{
-		Parent root = FXMLLoader.load(getClass().getResource("/username.fxml"));
+	public void switchto_gamepage(ActionEvent event) throws IOException{
+		Parent root = FXMLLoader.load(getClass().getResource("/gamepage.fxml"));
 		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
 	}
-	
-	@FXML
-	public void exit(ActionEvent event) {
-		stage = (Stage) home.getScene().getWindow();
-		System.out.println("You logged out!");
-		stage.close();
-	}
-	
-	
-	
-	
 }
-
