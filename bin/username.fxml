@@ -10,7 +10,6 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<<<<<<< HEAD
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.usernamecontroller">
    <children>
       <ImageView fitHeight="551.0" fitWidth="1016.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
@@ -66,44 +65,5 @@
          </font>
       </Button>
       <TextField fx:id="getusername" layoutX="294.0" layoutY="175.0" prefHeight="32.0" prefWidth="234.0" />
-=======
-<AnchorPane prefHeight="444.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homepagecontroller">
-   <children>
-      <AnchorPane layoutX="6.0" layoutY="-3.0" prefHeight="515.0" prefWidth="770.0" AnchorPane.bottomAnchor="-53.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
-         <children>
-            <ImageView fitHeight="465.0" fitWidth="857.0" layoutX="-75.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/userAuthenticationPage.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="185.0" fitWidth="296.0" layoutX="225.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../../Downloads/userName.jpeg" />
-               </image>
-            </ImageView>
-            <Button fx:id="button4" layoutX="529.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchto_homepage" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-color: lightgreen; -fx-border-width: 5; -fx-pref-height: 59; -fx-pref-width: 174;" text="HOME">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <textFill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="0.09019999951124191" green="0.8199999928474426" blue="0.6929141879081726" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </textFill></Button>
-            <TextField layoutX="259.0" layoutY="222.0" prefHeight="36.0" prefWidth="226.0" promptText="Enter your name" />
-         </children>
-      </AnchorPane>
->>>>>>> parent of 9c3dcab (gamepage added)
    </children>
 </AnchorPane>
