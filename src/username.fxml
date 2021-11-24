@@ -16,12 +16,12 @@
          <children>
             <ImageView fitHeight="465.0" fitWidth="857.0" layoutX="-75.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Downloads/userAuthenticationPage.png" />
+                  <Image url="@../media/userAuthenticationPage.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="185.0" fitWidth="296.0" layoutX="225.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../Downloads/userName.jpeg" />
+                  <Image url="@../media/userName.jpeg" />
                </image>
             </ImageView>
             <Button fx:id="button4" layoutX="529.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchto_homepage" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-color: lightgreen; -fx-border-width: 5; -fx-pref-height: 59; -fx-pref-width: 174;" text="HOME">
