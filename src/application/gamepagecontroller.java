@@ -18,13 +18,13 @@ public class gamepagecontroller implements Initializable{
 	public void displayName(String username) {
 		playername.setText("PLAYER : " + username);
 	}
-	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-		
-		TranslateTransition translate = new TranslateTransition();
-		translate.setNode(zombieImage);
-		translate.setDuration(Duration.millis(20000));
-		translate.setByX(-500);
-		translate.play();
-	}
+//	@Override
+//	public void initialize(URL arg0, ResourceBundle arg1) {
+//		
+//		TranslateTransition translate = new TranslateTransition();
+//		translate.setNode(zombieImage);
+//		translate.setDuration(Duration.millis(20000));
+//		translate.setByX(-500);
+//		translate.play();
+//	}
 }

@@ -38,5 +38,30 @@
             <Image url="@../media/zombie.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="zombieImage1" fitHeight="107.0" fitWidth="67.0" layoutX="762.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage2" fitHeight="107.0" fitWidth="67.0" layoutX="765.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage3" fitHeight="107.0" fitWidth="67.0" layoutX="765.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage4" fitHeight="107.0" fitWidth="67.0" layoutX="762.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage5" fitHeight="107.0" fitWidth="67.0" layoutX="752.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
