@@ -13,5 +13,30 @@
          </image>
       </ImageView>
       <Label fx:id="playername" layoutX="547.0" layoutY="520.0" prefHeight="22.0" prefWidth="256.0" style="-fx-background-color: white;" text="Label" />
+      <ImageView fx:id="zombieImage" fitHeight="107.0" fitWidth="67.0" layoutX="732.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage" fitHeight="107.0" fitWidth="67.0" layoutX="732.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage" fitHeight="107.0" fitWidth="67.0" layoutX="732.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage" fitHeight="122.0" fitWidth="67.0" layoutX="728.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombieImage" fitHeight="107.0" fitWidth="67.0" layoutX="715.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
