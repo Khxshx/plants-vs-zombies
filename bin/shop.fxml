@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="543.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homepagecontroller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="543.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.shopcontroller">
    <children>
       <AnchorPane layoutY="-47.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="574.0" prefWidth="819.0">
          <children>
@@ -16,7 +16,7 @@
                   <Image url="@../media/shop.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="373.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchto_homepage" prefHeight="58.0" prefWidth="120.0" text="Game Page" textAlignment="CENTER" textFill="#d62929">
+            <Button fx:id="shopbutton" layoutX="373.0" layoutY="513.0" mnemonicParsing="false" onAction="#switchto_homepage" prefHeight="58.0" prefWidth="120.0" text="Game Page" textAlignment="CENTER" textFill="#d62929">
                <font>
                   <Font size="18.0" />
                </font>
