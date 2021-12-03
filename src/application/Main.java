@@ -19,6 +19,10 @@ public class Main extends Application {
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			Image icon = new Image("heading_main_page.png");
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("MyFxml.fxml"));
+
+            // Set the controller for this FXML document
+            loader.setController(new gamepagecontroller());
 			primaryStage.getIcons().add(icon);
 			primaryStage.setScene(scene);
 			primaryStage.show();
