@@ -48,7 +48,7 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	TranslateTransition z1 = new TranslateTransition();
 	z1.setDuration(Duration.seconds(10));
 	z1.setNode(zombie1);
-	z1.setToX(-400);
+	z1.setToX(-800);
 	z1.setCycleCount(1000);
 	z1.play();
 	
@@ -82,29 +82,42 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	
 
 	TranslateTransition s1 = new TranslateTransition();
-	s1.setDuration(Duration.seconds(10));
+	s1.setDuration(Duration.seconds(40));
 	s1.setNode(sun1);
-	s1.setToY(400);
+	s1.setToY(2000);
+	s1.setCycleCount(1000);
 	s1.play();
+	
+	
 	TranslateTransition s2 = new TranslateTransition();
-	s2.setDuration(Duration.seconds(10));
+	s2.setDuration(Duration.seconds(40));
 	s2.setNode(sun2);
-	s2.setToY(400);
+	s2.setToY(2000);
+	s2.setCycleCount(1000);
 	s2.play();
+	
+	
 	TranslateTransition s3 = new TranslateTransition();
-	s3.setDuration(Duration.seconds(10));
+	s3.setDuration(Duration.seconds(40));
 	s3.setNode(sun3);
-	s3.setToY(400);
+	s3.setToY(2000);
+	s3.setCycleCount(1000);
 	s3.play();
+	
+	
 	TranslateTransition s4 = new TranslateTransition();
-	s4.setDuration(Duration.seconds(10));
+	s4.setDuration(Duration.seconds(40));
 	s4.setNode(sun4);
-	s4.setToY(400);
+	s4.setToY(1500);
+	s4.setCycleCount(2000);
 	s4.play();
+	
+	
 	TranslateTransition s5 = new TranslateTransition();
-	s5.setDuration(Duration.seconds(10));
+	s5.setDuration(Duration.seconds(40));
 	s5.setNode(sun5);
-	s5.setToY(400);
+	s5.setToY(1500);
+	s5.setCycleCount(1000);
 	s5.play();
 	
 	
