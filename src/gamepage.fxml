@@ -63,11 +63,6 @@
             <Image url="@../media/sun.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="zombie21" fitHeight="102.0" fitWidth="139.0" layoutX="1307.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
       <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="130.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
