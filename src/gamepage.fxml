@@ -38,5 +38,30 @@
             <Image url="@../media/zombie.gif" />
          </image>
       </ImageView>
+      <ImageView fx:id="sun1" fitHeight="75.0" fitWidth="83.0" layoutX="179.0" layoutY="-24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun2" fitHeight="75.0" fitWidth="83.0" layoutX="234.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun5" fitHeight="75.0" fitWidth="83.0" layoutX="409.0" layoutY="-61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun3" fitHeight="75.0" fitWidth="83.0" layoutX="299.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun4" fitHeight="75.0" fitWidth="83.0" layoutX="316.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
