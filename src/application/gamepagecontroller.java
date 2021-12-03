@@ -46,37 +46,37 @@ public class gamepagecontroller implements Initializable  {
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {
 	TranslateTransition z1 = new TranslateTransition();
-	z1.setDuration(Duration.seconds(10));
+	z1.setDuration(Duration.seconds(30));
 	z1.setNode(zombie1);
 	z1.setToX(-800);
 	z1.setCycleCount(1000);
 	z1.play();
 	
 	TranslateTransition z2 = new TranslateTransition();
-	z2.setDuration(Duration.seconds(10));
+	z2.setDuration(Duration.seconds(60));
 	z2.setNode(zombie2);
-	z2.setToX(-600);
+	z2.setToX(-1555);
 	z2.setCycleCount(1000);
 	z2.play();
 	
 	TranslateTransition z3 = new TranslateTransition();
-	z3.setDuration(Duration.seconds(10));
+	z3.setDuration(Duration.seconds(48));
 	z3.setNode(zombie3);
-	z3.setToX(-500);
+	z3.setToX(-1225);
 	z3.setCycleCount(1000);
 	z3.play();
 	
 	TranslateTransition z4 = new TranslateTransition();
-	z4.setDuration(Duration.seconds(10));
+	z4.setDuration(Duration.seconds(33));
 	z4.setNode(zombie4);
-	z4.setToX(-300);
+	z4.setToX(-888);
 	z4.setCycleCount(1000);
 	z4.play();
 	
 	TranslateTransition z5 = new TranslateTransition();
-	z5.setDuration(Duration.seconds(10));
+	z5.setDuration(Duration.seconds(54));
 	z5.setNode(zombie5);
-	z5.setToX(-550);
+	z5.setToX(-1486);
 	z5.setCycleCount(1000);
 	z5.play();
 	
@@ -108,7 +108,7 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	TranslateTransition s4 = new TranslateTransition();
 	s4.setDuration(Duration.seconds(40));
 	s4.setNode(sun4);
-	s4.setToY(1500);
+	s4.setToY(2000);
 	s4.setCycleCount(2000);
 	s4.play();
 	
@@ -116,7 +116,7 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	TranslateTransition s5 = new TranslateTransition();
 	s5.setDuration(Duration.seconds(40));
 	s5.setNode(sun5);
-	s5.setToY(1500);
+	s5.setToY(2000);
 	s5.setCycleCount(1000);
 	s5.play();
 	
