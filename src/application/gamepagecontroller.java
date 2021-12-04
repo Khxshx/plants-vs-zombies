@@ -7,15 +7,17 @@ import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class gamepagecontroller implements Initializable  {
+public class gamepagecontroller implements Initializable, EventHandler<ActionEvent>  {
 	@FXML
 	Label playername;
 	@FXML 
@@ -38,7 +40,7 @@ public class gamepagecontroller implements Initializable  {
 	private ImageView zombie4;
 	@FXML
 	private ImageView zombie5;
-	private static int sunCount;
+	private static int sunCount = 0;
 	public void displayName(String username) {
 		playername.setText("PLAYER : " + username);
 	}
@@ -119,13 +121,63 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	s5.setToY(2000);
 	s5.setCycleCount(1000);
 	s5.play();
-	
+	// increment sunCount
+	sun1.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCount += 1;
+	         System.out.println(sunCount);
+	         event.consume();
+	     }
+	});
+	sun2.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCount += 1;
+	         System.out.println(sunCount);
+	         event.consume();
+	     }
+	});
+	sun3.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCount += 1;
+	         System.out.println(sunCount);
+	         event.consume();
+	     }
+	});
+	sun4.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCount += 1;
+	         System.out.println(sunCount);
+	         event.consume();
+	     }
+	});
+	sun5.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCount += 1;
+	         System.out.println(sunCount);
+	         event.consume();
+	     }
+	});
 	
 	
 }
 
 
-	
+
 	
 	
 	
