@@ -20,6 +20,8 @@ import javafx.util.Duration;
 public class gamepagecontroller implements Initializable, EventHandler<ActionEvent>  {
 	@FXML
 	Label playername;
+	@FXML
+	Label suncount;
 	@FXML 
 	private ImageView sun1;
 	@FXML 
@@ -40,9 +42,12 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	private ImageView zombie4;
 	@FXML
 	private ImageView zombie5;
-	private static int sunCount = 0;
+	private static int sunCounter = 0;
 	public void displayName(String username) {
 		playername.setText("PLAYER : " + username);
+	}
+	public void displaycount(int sunCounter) {
+		suncount.setText("" + sunCounter);
 	}
 //
 @Override
@@ -127,8 +132,9 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	     @Override
 	     public void handle(MouseEvent event) {
 	    	
-	    	 sunCount += 1;
-	         System.out.println(sunCount);
+	    	 sunCounter += 1;
+	    	 sun1.setOpacity(0);
+	    	 displaycount(sunCounter); 
 	         event.consume();
 	     }
 	});
@@ -137,8 +143,9 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	     @Override
 	     public void handle(MouseEvent event) {
 	    	
-	    	 sunCount += 1;
-	         System.out.println(sunCount);
+	    	 sunCounter += 1;
+	    	 sun2.setOpacity(0);
+	    	 displaycount(sunCounter); 
 	         event.consume();
 	     }
 	});
@@ -147,8 +154,9 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	     @Override
 	     public void handle(MouseEvent event) {
 	    	
-	    	 sunCount += 1;
-	         System.out.println(sunCount);
+	    	 sunCounter += 1;
+	    	 sun3.setOpacity(0);
+	    	 displaycount(sunCounter); 
 	         event.consume();
 	     }
 	});
@@ -157,8 +165,9 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	     @Override
 	     public void handle(MouseEvent event) {
 	    	
-	    	 sunCount += 1;
-	         System.out.println(sunCount);
+	    	 sunCounter += 1;
+	    	 sun4.setOpacity(0);
+	    	 displaycount(sunCounter); 
 	         event.consume();
 	     }
 	});
@@ -167,12 +176,18 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	     @Override
 	     public void handle(MouseEvent event) {
 	    	
-	    	 sunCount += 1;
-	         System.out.println(sunCount);
+	    	 sunCounter += 1;
+	    	 sun5.setOpacity(0);
+	    	 displaycount(sunCounter); 
 	         event.consume();
 	     }
 	});
 	
+	
+}
+@Override
+public void handle(ActionEvent arg0) {
+	// TODO Auto-generated method stub
 	
 }
 
