@@ -4,90 +4,99 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gamepagecontroller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gamepagecontroller">   
    <children>
       <ImageView fitHeight="542.0" fitWidth="819.0" layoutX="-1.0" pickOnBounds="true">
          <image>
             <Image url="@../media/backyard.jpeg" />
          </image>
       </ImageView>
-      <Label fx:id="playername" layoutX="547.0" layoutY="520.0" prefHeight="22.0" prefWidth="256.0" style="-fx-background-color: white;" text="Label" />
-      <ImageView fx:id="zombie1" fitHeight="102.0" fitWidth="139.0" layoutX="882.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="zombie2" fitHeight="102.0" fitWidth="139.0" layoutX="1638.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="zombie3" fitHeight="102.0" fitWidth="139.0" layoutX="1307.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="zombie4" fitHeight="102.0" fitWidth="139.0" layoutX="970.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="zombie5" fitHeight="102.0" fitWidth="139.0" layoutX="1568.0" layoutY="399.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/zombie.gif" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="sun1" fitHeight="75.0" fitWidth="83.0" layoutX="143.0" layoutY="-762.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/sun.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="sun2" fitHeight="75.0" fitWidth="83.0" layoutX="236.0" layoutY="-209.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/sun.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="sun5" fitHeight="75.0" fitWidth="83.0" layoutX="380.0" layoutY="-517.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/sun.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="sun3" fitHeight="75.0" fitWidth="83.0" layoutX="591.0" layoutY="-290.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/sun.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="sun4" fitHeight="75.0" fitWidth="83.0" layoutX="638.0" layoutY="-1064.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../media/sun.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="130.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+    
+    <ImageView fx:id="mower1" fitHeight="95.0" fitWidth="88.0" layoutX="130.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="121.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mower2" fitHeight="95.0" fitWidth="88.0" layoutX="121.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="113.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mower3" fitHeight="95.0" fitWidth="88.0" layoutX="113.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="106.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mower5" fitHeight="95.0" fitWidth="88.0" layoutX="106.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="95.0" fitWidth="88.0" layoutX="113.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="mower4" fitHeight="95.0" fitWidth="88.0" layoutX="113.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/mower.png" />
          </image>
       </ImageView>
-      <Label fx:id="suncount" layoutX="20.0" layoutY="501.0" prefHeight="18.0" prefWidth="34.0" style="-fx-background-color: white;" />
+      
+      <Label fx:id="playername" layoutX="547.0" layoutY="520.0" prefHeight="22.0" prefWidth="256.0" style="-fx-background-color: white;" text="PLayer Name :" />
+      <ImageView fx:id="zombie1" fitHeight="102.0" fitWidth="139.0" layoutX="805.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie2" fitHeight="102.0" fitWidth="139.0" layoutX="805.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie3" fitHeight="102.0" fitWidth="139.0" layoutX="805.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie4" fitHeight="102.0" fitWidth="139.0" layoutX="811.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="zombie5" fitHeight="102.0" fitWidth="139.0" layoutX="811.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/zombie.gif" />
+         </image>
+      </ImageView>
+      
+       <ImageView id="sun1" fx:id="sun1" fitHeight="75.0" fitWidth="83.0" layoutX="137.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun2" fx:id="sun2" fitHeight="75.0" fitWidth="83.0" layoutX="231.0" layoutY="-67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun3" fx:id="sun3" fitHeight="75.0" fitWidth="83.0" layoutX="371.0" layoutY="-105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun4" fitHeight="75.0" fitWidth="83.0" layoutX="591.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun5" fitHeight="75.0" fitWidth="83.0" layoutX="646.0" layoutY="-104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="suncounter" layoutX="23.0" layoutY="503.0" text="Label" textFill="#fcf7f7">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+ 
    </children>
 </AnchorPane>
