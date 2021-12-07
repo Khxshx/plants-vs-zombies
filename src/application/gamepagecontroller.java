@@ -238,6 +238,62 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     {
         sun5.setOpacity(0);
     });
+    
+    sun1.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun1.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun2.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun2.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun3.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun3.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun4.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun4.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun5.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun5.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
 	
 }
 @Override
