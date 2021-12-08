@@ -91,5 +91,7 @@
             
         </buttons>
       </ButtonBar>
+      <Button fx:id="playButton" layoutX="13.0" layoutY="25.0" mnemonicParsing="false" onAction="#playSound" prefHeight="35.0" prefWidth="57.0" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-width: 5; -fx-border-color: lightgreen;" text="Play" textFill="#90efa8" />
+      <Button fx:id="pauseButton" layoutX="70.0" layoutY="25.0" mnemonicParsing="false" onAction="#pauseSound" style="-fx-background-color: green; -fx-border-style: solid; -fx-border-color: lightgreen; -fx-border-width: 5;" text="Pause" textFill="#88cc7a" />
    </children>
 </AnchorPane>

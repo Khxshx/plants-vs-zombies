@@ -1,4 +1,5 @@
 package application;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -11,14 +12,22 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Bounds;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class gamepagecontroller implements Initializable, EventHandler<ActionEvent>  {
+	String path = "media\\sounds\\background.wav";
+	Media media = new Media(new File(path).toURI().toString());
+	MediaPlayer mediaPlayer = new MediaPlayer(media);
+	@FXML
+	private Button playButton, pauseButton;
 	@FXML
 	Label playername;
 	@FXML
@@ -62,6 +71,17 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	public void displaycount(int sunCounter) {
 		suncount.setText("" + sunCounter);
 	}
+	@FXML
+	
+	public void playSound(ActionEvent event) {
+		mediaPlayer.play();
+		mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+	}
+	
+	public void pauseSound(ActionEvent event) {
+		mediaPlayer.pause();
+	}
+	
 //
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {
@@ -331,6 +351,7 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	         
 	     }
 	});
+	
 	
 }
 @Override

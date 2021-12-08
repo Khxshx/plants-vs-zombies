@@ -91,5 +91,7 @@
             
         </buttons>
       </ButtonBar>
+      <Button fx:id="playButton" layoutX="23.0" layoutY="25.0" mnemonicParsing="false" onAction="#playSound" prefHeight="26.0" prefWidth="47.0" text="Play" />
+      <Button fx:id="pauseButton" layoutX="23.0" layoutY="59.0" mnemonicParsing="false" onAction="#pauseSound" text="Pause" />
    </children>
 </AnchorPane>
