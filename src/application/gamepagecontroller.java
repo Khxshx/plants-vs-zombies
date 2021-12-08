@@ -14,15 +14,20 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Bounds;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.Dragboard;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.input.TransferMode;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class gamepagecontroller implements Initializable, EventHandler<ActionEvent>  {
+public class gamepagecontroller implements Initializable, EventHandler<ActionEvent> {
 	String path = "media\\sounds\\background.wav";
 	Media media = new Media(new File(path).toURI().toString());
 	MediaPlayer mediaPlayer = new MediaPlayer(media);
@@ -35,6 +40,10 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	@FXML 
 	private ImageView sun1;
 	@FXML 
+	private ImageView peashooter;
+	@FXML 
+	private ImageView peashooterdestination;
+	@FXML
 	private ImageView sun2;
 	@FXML 
 	private ImageView sun3;
@@ -81,12 +90,30 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	public void pauseSound(ActionEvent event) {
 		mediaPlayer.pause();
 	}
+	public void handleDragDetection(MouseEvent event) {
+		System.out.println("dragdetection");
+		Dragboard db = peashooter.startDragAndDrop(TransferMode.MOVE);
+		ClipboardContent cb = new ClipboardContent();
+		cb.putImage(peashooter.getImage());
+		db.setContent(cb);
+		event.consume();
+	}
+	public void handleDragOver(DragEvent event) {
+		if(event.getDragboard().hasImage()) {
+			event.acceptTransferModes(TransferMode.MOVE);
+		}
+		event.consume();
+	}
+	public void handledrop(DragEvent event) {
+		if(event.getTransferMode() == TransferMode.MOVE) {
+			peashooterdestination.setImage(event.getDragboard().getImage());
+		}
+		event.consume();
+	}
 	
 //
 @Override
 public void initialize(URL arg0, ResourceBundle arg1) {
-	
-	
 	
 	
     TranslateTransition z1 = new TranslateTransition();

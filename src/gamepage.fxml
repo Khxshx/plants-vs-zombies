@@ -9,7 +9,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gamepagecontroller">   
    <children>
-      <ImageView fitHeight="542.0" fitWidth="819.0" layoutX="-1.0" pickOnBounds="true">
+      <ImageView fx:id="peashooter" fitHeight="542.0" fitWidth="819.0" layoutX="-1.0" pickOnBounds="true">
          <image>
             <Image url="@../media/backyard.jpeg" />
          </image>
@@ -106,6 +106,12 @@
          <font>
             <Font size="16.0" />
          </font></Button>
+      <ImageView fx:id="peashooter" fitHeight="102.0" fitWidth="74.0" layoutY="107.0" onDragDetected="#handleDragDetection" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/peashooter.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="peashooterdestination" fitHeight="112.0" fitWidth="75.0" layoutX="334.0" layoutY="9.0" onDragDropped="#handledrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
  
    </children>
 </AnchorPane>
