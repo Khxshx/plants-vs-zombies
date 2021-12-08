@@ -92,7 +92,7 @@
             <Image url="@../media/sun.png" />
          </image>
       </ImageView>
-      <Label fx:id="suncount" layoutX="14.0" layoutY="507.0" text="Label" textFill="#fcf7f7">
+      <Label fx:id="suncount" layoutX="14.0" layoutY="507.0" text="sun count" textFill="#fcf7f7">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

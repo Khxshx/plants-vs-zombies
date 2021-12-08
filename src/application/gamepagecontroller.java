@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Bounds;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -133,7 +134,14 @@ public void initialize(URL arg0, ResourceBundle arg1) {
         m1.setNode(mower1);
         m1.setDuration(Duration.seconds(5));
         m1.setToX(750);
-        m1.play(); 
+        m1.play();
+        zombie1.setOpacity(1);
+        z1.setDelay(Duration.seconds(5));
+        z1.setNode(zombie1);
+        z1.setFromX(805);
+        z1.setToX(-700);
+        z1.setDuration(Duration.seconds(20));
+        z1.play();
     });
     
     z2.setDelay(Duration.seconds(9));
@@ -147,8 +155,15 @@ public void initialize(URL arg0, ResourceBundle arg1) {
         zombie2.setOpacity(0);
         m2.setNode(mower2);
         m2.setDuration(Duration.seconds(5));
-        m2.setToX(700);
+        m2.setToX(750);
         m2.play();
+        zombie2.setOpacity(1);
+        z2.setDelay(Duration.seconds(9));
+        z2.setNode(zombie2);
+        z2.setFromX(805);
+        z2.setToX(-700);
+        z2.setDuration(Duration.seconds(20));
+        z2.play();
     });
     
     z3.setDelay(Duration.seconds(17));
@@ -161,8 +176,15 @@ public void initialize(URL arg0, ResourceBundle arg1) {
         zombie3.setOpacity(0);
         m3.setNode(mower3);
         m3.setDuration(Duration.seconds(5));
-        m3.setToX(700);
+        m3.setToX(750);
         m3.play();
+        zombie3.setOpacity(1);
+        z3.setDelay(Duration.seconds(17));
+        z3.setNode(zombie3);
+        z3.setFromX(805);
+        z3.setToX(-700);
+        z3.setDuration(Duration.seconds(20));
+        z3.play();
     });
     
     z4.setDelay(Duration.seconds(13));
@@ -173,25 +195,40 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     z4.play();
     z4.setOnFinished(e4->
     {
-        zombie4.setOpacity(0);
+    	zombie4.setOpacity(0);
         m4.setNode(mower4);
         m4.setDuration(Duration.seconds(5));
-        m4.setToX(700);
+        m4.setToX(750);
         m4.play();
+        zombie1.setOpacity(1);
+        z4.setDelay(Duration.seconds(13));
+        z4.setNode(zombie4);
+        z4.setFromX(805);
+        z4.setToX(-700);
+        z4.setDuration(Duration.seconds(20));
+        z4.play();
     });
     
     z5.setDelay(Duration.seconds(23));
     z5.setNode(zombie5);
-    z5.setToX(-700);
-    z5.setDuration(Duration.seconds(20));
+    z5.setToX(-730);
+    z5.setDuration(Duration.seconds(5));
+    z5.setCycleCount(1000);
     z5.play();
-    z5.setOnFinished(e5->
+    z5.setOnFinished(e4->
     {
         zombie5.setOpacity(0);
         m5.setNode(mower5);
         m5.setDuration(Duration.seconds(5));
-        m5.setToX(700);
+        m5.setToX(750);
         m5.play();
+        zombie5.setOpacity(1);
+        z5.setDelay(Duration.seconds(5));
+        z5.setNode(zombie5);
+        z5.setFromX(805);
+        z5.setToX(-700);
+        z5.setDuration(Duration.seconds(20));
+        z5.play();
     });
     
     
