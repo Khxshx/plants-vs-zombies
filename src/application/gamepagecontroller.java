@@ -51,6 +51,16 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	private ImageView sun4;
 	@FXML 
 	private ImageView sun5;
+	@FXML 
+	private ImageView sun6;
+	@FXML 
+	private ImageView sun7;
+	@FXML 
+	private ImageView sun8;
+	@FXML 
+	private ImageView sun9;
+	@FXML 
+	private ImageView sun10;
 	@FXML
 	private ImageView zombie1;
 	@FXML
@@ -126,6 +136,11 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     TranslateTransition s3 = new TranslateTransition();
     TranslateTransition s4 = new TranslateTransition();
     TranslateTransition s5 = new TranslateTransition();
+    TranslateTransition s6 = new TranslateTransition();
+    TranslateTransition s7 = new TranslateTransition();
+    TranslateTransition s8 = new TranslateTransition();
+    TranslateTransition s9 = new TranslateTransition();
+    TranslateTransition s10 = new TranslateTransition();
     TranslateTransition m1 = new TranslateTransition();
     TranslateTransition m2 = new TranslateTransition();
     TranslateTransition m3 = new TranslateTransition();
@@ -159,15 +174,41 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     
     s5.setDelay(Duration.seconds(11));
     s5.setDuration(Duration.seconds(7));
-    s5.setNode(sun4);
+    s5.setNode(sun5);
     s5.setToY(500);
     s5.play();
     
-    s4.setDelay(Duration.seconds(15));
-    s4.setDuration(Duration.seconds(7));
-    s4.setNode(sun4);
-    s4.setToY(500);
-    s4.play();
+    s6.setDelay(Duration.seconds(19));
+    s6.setDuration(Duration.seconds(7));
+    s6.setNode(sun6);
+    s6.setToY(500);
+    s6.play();
+    
+    s7.setDelay(Duration.seconds(25));
+    s7.setDuration(Duration.seconds(7));
+    s7.setNode(sun7);
+    s7.setToY(500);
+    s7.play();
+    
+    s8.setDelay(Duration.seconds(28));
+    s8.setDuration(Duration.seconds(7));
+    s8.setNode(sun8);
+    s8.setToY(500);
+    s8.play();
+    
+    s9.setDelay(Duration.seconds(35));
+    s9.setDuration(Duration.seconds(7));
+    s9.setNode(sun9);
+    s9.setToY(500);
+    s9.play();
+    
+    s10.setDelay(Duration.seconds(30));
+    s10.setDuration(Duration.seconds(7));
+    s10.setNode(sun10);
+    s10.setToY(500);
+    s10.play();
+    
+    
     
     z1.setDelay(Duration.seconds(5));
     z1.setNode(zombie1);
@@ -247,7 +288,7 @@ public void initialize(URL arg0, ResourceBundle arg1) {
         m4.setDuration(Duration.seconds(5));
         m4.setToX(750);
         m4.play();
-        zombie1.setOpacity(1);
+        zombie4.setOpacity(1);
         z4.setDelay(Duration.seconds(13));
         z4.setNode(zombie4);
         z4.setFromX(805);
@@ -259,10 +300,10 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     z5.setDelay(Duration.seconds(23));
     z5.setNode(zombie5);
     z5.setToX(-730);
-    z5.setDuration(Duration.seconds(5));
+    z5.setDuration(Duration.seconds(20));
     z5.setCycleCount(1000);
     z5.play();
-    z5.setOnFinished(e4->
+    z5.setOnFinished(e5->
     {
         zombie5.setOpacity(0);
         m5.setNode(mower5);
@@ -322,6 +363,26 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     {
         sun5.setOpacity(0);
     });
+    s6.setOnFinished(e17->
+    {
+        sun6.setOpacity(0);
+    });
+    s7.setOnFinished(e19->
+    {
+        sun7.setOpacity(0);
+    });
+    s8.setOnFinished(e20->
+    {
+        sun8.setOpacity(0);
+    });
+    s9.setOnFinished(e21->
+    {
+        sun9.setOpacity(0);
+    });
+    s10.setOnFinished(e22->
+    {
+        sun10.setOpacity(0);
+    });
     
     sun1.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
 
@@ -378,8 +439,61 @@ public void initialize(URL arg0, ResourceBundle arg1) {
 	         
 	     }
 	});
-	
-	
+	sun6.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun6.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun7.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun7.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun8.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun8.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun9.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun9.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
+	sun10.addEventHandler(MouseEvent.MOUSE_CLICKED, new EventHandler<MouseEvent>() {
+
+	     @Override
+	     public void handle(MouseEvent event) {
+	    	
+	    	 sunCounter += 1;
+	    	 sun10.setOpacity(0.3);
+	    	 displaycount(sunCounter); 
+	         
+	     }
+	});
 }
 @Override
 public void handle(ActionEvent arg0) {

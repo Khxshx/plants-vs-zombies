@@ -112,6 +112,31 @@
          </image>
       </ImageView>
       <ImageView fx:id="peashooterdestination" fitHeight="112.0" fitWidth="75.0" layoutX="334.0" layoutY="9.0" onDragDropped="#handledrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <ImageView id="sun1" fx:id="sun6" fitHeight="75.0" fitWidth="83.0" layoutX="150.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun2" fx:id="sun7" fitHeight="75.0" fitWidth="83.0" layoutX="238.0" layoutY="-112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView id="sun3" fx:id="sun8" fitHeight="75.0" fitWidth="83.0" layoutX="381.0" layoutY="-95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun9" fitHeight="75.0" fitWidth="83.0" layoutX="601.0" layoutY="-65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sun10" fitHeight="75.0" fitWidth="83.0" layoutX="656.0" layoutY="-94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../media/sun.png" />
+         </image>
+      </ImageView>
  
    </children>
 </AnchorPane>
