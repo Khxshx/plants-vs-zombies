@@ -111,7 +111,7 @@
             <Image url="@../media/peashooter.gif" />
          </image>
       </ImageView>
-      <ImageView fx:id="peashooterdestination" fitHeight="112.0" fitWidth="75.0" layoutX="334.0" layoutY="9.0" onDragDropped="#handledrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="peashooterdestination1" fitHeight="84.0" fitWidth="74.0" layoutX="326.0" layoutY="37.0" onDragDropped="#handledrop1" onDragOver="#handleDragOver1" pickOnBounds="true" preserveRatio="true" />
       <ImageView id="sun1" fx:id="sun6" fitHeight="75.0" fitWidth="83.0" layoutX="150.0" layoutY="-121.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../media/sun.png" />
@@ -137,6 +137,10 @@
             <Image url="@../media/sun.png" />
          </image>
       </ImageView>
+      <ImageView fx:id="peashooterdestination2" fitHeight="93.0" fitWidth="74.0" layoutX="326.0" layoutY="130.0" onDragDropped="#handledrop2" onDragOver="#handleDragOver2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="peashooterdestination3" fitHeight="102.0" fitWidth="75.0" layoutX="319.0" layoutY="220.0" onDragDropped="#handledrop3" onDragOver="#handleDragOver3" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="peashooterdestination4" fitHeight="102.0" fitWidth="74.0" layoutX="326.0" layoutY="322.0" onDragDropped="#handledrop4" onDragOver="#handleDragOver4" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="peashooterdestination5" fitHeight="110.0" fitWidth="88.0" layoutX="327.0" layoutY="420.0" onDragDropped="#handledrop5" onDragOver="#handleDragOver5" pickOnBounds="true" preserveRatio="true" />
  
    </children>
 </AnchorPane>

@@ -42,7 +42,15 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 	@FXML 
 	private ImageView peashooter;
 	@FXML 
-	private ImageView peashooterdestination;
+	private ImageView peashooterdestination1;
+	@FXML 
+	private ImageView peashooterdestination2;
+	@FXML 
+	private ImageView peashooterdestination3;
+	@FXML 
+	private ImageView peashooterdestination4;
+	@FXML 
+	private ImageView peashooterdestination5;
 	@FXML
 	private ImageView sun2;
 	@FXML 
@@ -108,18 +116,83 @@ public class gamepagecontroller implements Initializable, EventHandler<ActionEve
 		db.setContent(cb);
 		event.consume();
 	}
-	public void handleDragOver(DragEvent event) {
+	
+	
+	public void handleDragOver1(DragEvent event) {
 		if(event.getDragboard().hasImage()) {
 			event.acceptTransferModes(TransferMode.MOVE);
 		}
 		event.consume();
 	}
-	public void handledrop(DragEvent event) {
+	public void handledrop1(DragEvent event) {
 		if(event.getTransferMode() == TransferMode.MOVE) {
-			peashooterdestination.setImage(event.getDragboard().getImage());
+			peashooterdestination1.setImage(event.getDragboard().getImage());
 		}
 		event.consume();
 	}
+	
+	
+	
+	public void handleDragOver2(DragEvent event) {
+		if(event.getDragboard().hasImage()) {
+			event.acceptTransferModes(TransferMode.MOVE);
+		}
+		event.consume();
+	}
+	public void handledrop2(DragEvent event) {
+		if(event.getTransferMode() == TransferMode.MOVE) {
+			peashooterdestination2.setImage(event.getDragboard().getImage());
+		}
+		event.consume();
+	}
+	
+	
+	
+	public void handleDragOver3(DragEvent event) {
+		if(event.getDragboard().hasImage()) {
+			event.acceptTransferModes(TransferMode.MOVE);
+		}
+		event.consume();
+	}
+	public void handledrop3(DragEvent event) {
+		if(event.getTransferMode() == TransferMode.MOVE) {
+			peashooterdestination3.setImage(event.getDragboard().getImage());
+		}
+		event.consume();
+	}
+	
+	
+	
+	public void handleDragOver4(DragEvent event) {
+		if(event.getDragboard().hasImage()) {
+			event.acceptTransferModes(TransferMode.MOVE);
+		}
+		event.consume();
+	}
+	public void handledrop4(DragEvent event) {
+		if(event.getTransferMode() == TransferMode.MOVE) {
+			peashooterdestination4.setImage(event.getDragboard().getImage());
+		}
+		event.consume();
+	}
+	
+	
+	
+	public void handleDragOver5(DragEvent event) {
+		if(event.getDragboard().hasImage()) {
+			event.acceptTransferModes(TransferMode.MOVE);
+		}
+		event.consume();
+	}
+	public void handledrop5(DragEvent event) {
+		if(event.getTransferMode() == TransferMode.MOVE) {
+			peashooterdestination5.setImage(event.getDragboard().getImage());
+		}
+		event.consume();
+	}
+	
+	
+	
 	
 //
 @Override
@@ -278,7 +351,6 @@ public void initialize(URL arg0, ResourceBundle arg1) {
     z4.setDelay(Duration.seconds(13));
     z4.setNode(zombie4);
     z4.setToX(-700);
-    
     z4.setDuration(Duration.seconds(20));
     z4.play();
     z4.setOnFinished(e4->
@@ -297,27 +369,28 @@ public void initialize(URL arg0, ResourceBundle arg1) {
         z4.play();
     });
     
-    z5.setDelay(Duration.seconds(23));
+    z5.setDelay(Duration.seconds(10));
     z5.setNode(zombie5);
-    z5.setToX(-730);
+    z5.setToX(-700);
     z5.setDuration(Duration.seconds(20));
-    z5.setCycleCount(1000);
     z5.play();
     z5.setOnFinished(e5->
     {
-        zombie5.setOpacity(0);
+    	zombie5.setOpacity(0);
         m5.setNode(mower5);
         m5.setDuration(Duration.seconds(5));
         m5.setToX(750);
         m5.play();
         zombie5.setOpacity(1);
-        z5.setDelay(Duration.seconds(5));
+        z5.setDelay(Duration.seconds(13));
         z5.setNode(zombie5);
         z5.setFromX(805);
         z5.setToX(-700);
         z5.setDuration(Duration.seconds(20));
         z5.play();
     });
+    
+    
     
     
     m1.setOnFinished(e6->
